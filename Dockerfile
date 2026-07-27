@@ -6,7 +6,7 @@ ENV MC_VERSION="latest" \
     JAVA_OPTS=""
 
 RUN apk update \
-    && apk add libstdc++ openjdk25-jre nushell
+    && apk add libstdc++ openjdk25-jre nushell \
     && mkdir /papermc
 
 COPY papermc.nu .
